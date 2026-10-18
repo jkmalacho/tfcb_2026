@@ -11,8 +11,8 @@ Replace the lines specified in _italics_ with your answers and save as a text fi
 
 Complete the interactive tutorial.
 
-_Did you hit any points of frustration, and if so, how could we improve the material to avoid that frustration? If there is something that you would have liked to learn that we left out please let us know so in future years it can be included_
-
+I wasn't sure if there was another way to make the file names with the numbers so I just typed them all out.
+I was also confused by the hint about slide 9. I went back to the slides and I only saw the variables information and the slide about the first electronic computers. 
 
 ## Problem 1
 
@@ -52,8 +52,15 @@ sequence.gb<br>
 slides<br>
 vader.txt<br>
 
-_Paste your SCRIPT here (not the output)_
-
+```
+#!/bin/bash
+echo "My username is $(whoami)" > question01.txt
+echo "My home directory is $HOME" >> question01.txt
+echo "The contents of the tfcb_2026/lectures/lecture04/ directory are" >> question01.txt
+ls lectures/lecture04/ >> question01.txt
+mkdir homework02
+mv question01.txt homework02
+```
 
 ## Problem 2
 
@@ -75,6 +82,10 @@ tfcb_2023/homeworks/homework02/list.txt
 
 You can make the contents of those files whatever you want (hint: slide 9... )
 
-_Paste your SCRIPT here (not the output)_
-
-
+```
+#!/bin/bash
+mkdir homework02/question02
+for i in 504 569 231 717 986 528 759 654 751 262 889 281 186 108 388 374 148 716 637 550 382 797 477 202 699
+do echo "This is file $i" > homework02/question02/file$i.txt
+done
+```
