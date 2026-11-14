@@ -8,11 +8,9 @@
         "extensions.autoCheckUpdates": false
     },
     "extensions": [
-        // Python extension 
         "ms-python.python",
-        // Jupyter extension
         "ms-toolsai.jupyter",
-        // R extension 
         "REditorSupport.r",
+        "openai.chatgpt"
     ],
 }
